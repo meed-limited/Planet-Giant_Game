@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 77a8f5f3fb54a1649bd40c79c20c5eb5
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Evil Empire
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: ae1f7d1e9ade7ec4e826285f4aa2c0db, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
