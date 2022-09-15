@@ -5,6 +5,7 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 using DG.Tweening;
 using StarterAssets;
+using TMPro;
 
 
 public class InventoryItem : MonoBehaviour
@@ -23,11 +24,40 @@ public class InventoryItem : MonoBehaviour
     [SerializeField] private Image myIcon;
     [SerializeField] private Button myButton;
     [SerializeField] private ThirdPersonController thirdPersonController;
+    private Timer _timer;
     bool isSelected = false;
+    
+    
+
+    int _abilitySelectLimit = 3;
+    
+
+
+    private TMPro.TextMeshProUGUI _speedBoostText;
+    private TMPro.TextMeshProUGUI _jumpBoostText;
+    private TMPro.TextMeshProUGUI _timeBoostText;
+    private TMPro.TextMeshProUGUI _selectLimit;
 
     private void Start()
     {
-        thirdPersonController = GameObject.FindGameObjectWithTag("Player").GetComponent<ThirdPersonController>();
+        thirdPersonController = GameObject.Find("Model"+PlayerPrefs.GetInt("Selected")).GetComponent<ThirdPersonController>();
+        _timer = GameObject.Find("Timer").GetComponent<Timer>();
+        _speedBoostText = GameObject.Find("SpeedBoost").GetComponent<TMPro.TextMeshProUGUI>();
+        _jumpBoostText = GameObject.Find("JumpBoost").GetComponent<TMPro.TextMeshProUGUI>();
+        _timeBoostText = GameObject.Find("TimeBoost").GetComponent<TMPro.TextMeshProUGUI>();
+        _selectLimit = GameObject.Find("SelectLimit").GetComponent<TMPro.TextMeshProUGUI>();
+    }
+
+    private void Update()
+    {
+        if (!isSelected && _timer._currentSelected == 3)
+        {
+            gameObject.GetComponent<Button>().interactable = false;
+        }
+        else
+        {
+            gameObject.GetComponent<Button>().interactable = true;
+        }
     }
     public void Init(string tokenId, MetadataObject metadataObject)
     {
@@ -39,12 +69,10 @@ public class InventoryItem : MonoBehaviour
             Debug.Log("No attributes found");
             return;
         }
-        //Debug.Log("========2=========");
-        // Get Power-Up values
+
         foreach (var attribute in myMetadataObject.attributes)
         {
-            //Debug.Log(attribute.value);
-            //Debug.Log(attribute);
+
             if (attribute.display_type == "Booster")
             {
                 if (attribute.trait_type == "Jump")
@@ -93,24 +121,31 @@ public class InventoryItem : MonoBehaviour
 
     public void Selected()
     {
+
         onSelected?.Invoke(this);
-        if (isSelected == false)
+        if (isSelected == false )
         {
             isSelected = true;
-            Debug.Log("Selected");
+            //Debug.Log("Selected");
             Debug.Log($"Jump: {JumpPercentage} Move: {MovementPercentage} Extra Time: {ExtraTime}");
-            myIcon.color = new Color(0.2f,0.2f,0.2f) ;
+            myIcon.color = new Color(0.2f, 0.2f, 0.2f);
             //IconMove();
-            AbilityBoost(JumpPercentage, MovementPercentage);
+            AbilityBoost(JumpPercentage, MovementPercentage, ExtraTime);
+            _timer._currentSelected += 1;
+            _selectLimit.text = _timer._currentSelected.ToString() + "/3";
+            Debug.Log(_timer._currentSelected);
         }
         else if (isSelected == true)
         {
             isSelected = false;
             Debug.Log("UnSelected");
-            myIcon.color = new Color(1,1,1);
+            myIcon.color = new Color(1, 1, 1);
             //IconMove();
-            RemoveBoost(JumpPercentage, MovementPercentage);
+            _timer._currentSelected -= 1;
+            _selectLimit.text = _timer._currentSelected.ToString() + "/3";
+            RemoveBoost(JumpPercentage, MovementPercentage, ExtraTime);
         }
+
 
         
     }
@@ -118,15 +153,32 @@ public class InventoryItem : MonoBehaviour
     {
         gameObject.transform.DOMove(new Vector3(450, 143, 0), 0.5f);
     }
-    private void RemoveBoost(float jump, float movement)
+    private void RemoveBoost(float jump, float movement, int time)
     {
         thirdPersonController.JumpHeight /= (100 + jump) / 100;
         thirdPersonController.MoveSpeed /= (100 + movement) / 100;
+        _timer._timeRemaining -= time;
+        _timer._totaljumpboosted -= jump;
+        _timer._totalspeedboosted -= movement;
+        _timer._totaltimeboosted -= time;
+        _speedBoostText.text = "+" + _timer._totalspeedboosted + "%";
+        _jumpBoostText.text = "+" + _timer._totaljumpboosted + "%";
+        _timeBoostText.text = "+" + _timer._totaltimeboosted + "s";
     }
-    public void AbilityBoost(float jump, float movement)
+    public void AbilityBoost(float jump, float movement, int time)
     {
         thirdPersonController.JumpHeight *= (100+jump) / 100;
+        _timer._totaljumpboosted += jump;
+
         thirdPersonController.MoveSpeed *= (100 + movement) / 100;
+        _timer._totalspeedboosted += movement;
+
+        _timer._timeRemaining += time;
+        _timer._totaltimeboosted += time;
+
+        _speedBoostText.text = "+" + _timer._totalspeedboosted + "%";
+        _jumpBoostText.text = "+" + _timer._totaljumpboosted + "%";
+        _timeBoostText.text = "+" + _timer._totaltimeboosted + "s";
     }
 
     private IEnumerator GetTexture(string imageUrl)

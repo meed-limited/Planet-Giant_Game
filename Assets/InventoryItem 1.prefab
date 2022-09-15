@@ -302,6 +302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JumpPercentage: 0
   MovementPercentage: 0
+  ExtraTime: 0
   myTokenId: 
   myIcon: {fileID: 4239339155305202949}
   myButton: {fileID: 4500912682989041856}

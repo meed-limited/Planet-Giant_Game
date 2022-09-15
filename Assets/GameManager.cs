@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
     private Animator _playerAni;
     public StarterAssetsIn _input;
     private InputAction _open;
+    [SerializeField] private AchievementManager _am;
+
 
     [SerializeField] TMPro.TextMeshProUGUI _remindText;
     [SerializeField] TMPro.TextMeshProUGUI _levelText;
@@ -27,6 +29,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         _input = new StarterAssetsIn();
+
     }
     private void OnEnable()
     {
@@ -45,7 +48,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-
+        _am = GameObject.FindGameObjectWithTag("AcMan").GetComponent<AchievementManager>();
         Cursor.lockState = CursorLockMode.None;
         _playerAni = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
         _level = PlayerPrefs.GetInt("Level", 1);
@@ -116,11 +119,13 @@ public class GameManager : MonoBehaviour
     {
         _level++;
         PlayerPrefs.SetInt("Level", _level);
+        _am.AddAchievementProgress(2, 1);
     }
 
     public void Dead()
     {
         _playerAni.SetTrigger("Dead");
+        GetComponent<AudioSource>().Play();
         Cursor.lockState = CursorLockMode.None;
     }
 }

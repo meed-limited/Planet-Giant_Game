@@ -72,6 +72,7 @@ public class CharMovement : MonoBehaviour
                 PlaySfx();
                 _gm.ReduceCount();
                 _am.AddAchievementProgress(0, 1);
+                _am.AddAchievementProgress(1, 1);
 
             }
             _ani.SetFloat("Speed", 1);

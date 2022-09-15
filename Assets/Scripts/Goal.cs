@@ -11,6 +11,7 @@ public class Goal : MonoBehaviour
     private int _lv1Rewardclaimed;
     private int _lv2Rewardclaimed;
     private int _lv3Rewardclaimed;
+    AudioSource _sound;
 
 
     private void Start()
@@ -20,6 +21,7 @@ public class Goal : MonoBehaviour
         _lv1Rewardclaimed = PlayerPrefs.GetInt("Lv1Rewardclaimed", 0);
         _lv2Rewardclaimed = PlayerPrefs.GetInt("Lv2Rewardclaimed", 0);
         _lv3Rewardclaimed = PlayerPrefs.GetInt("Lv3Rewardclaimed", 0);
+        _sound = GetComponent<AudioSource>();
 
     }
     private void OnTriggerEnter(Collider other)
@@ -27,6 +29,7 @@ public class Goal : MonoBehaviour
         if (other.CompareTag("Player") && _gm._remind <= 3)
         {
             _gm.LevelUp();
+            _sound.Play();
             _finishtext.SetActive(true);
             Cursor.lockState = CursorLockMode.None;
             if (PlayerPrefs.GetInt("Level", 1) == 1 && _lv1Rewardclaimed == 0)

@@ -14,6 +14,10 @@ public class Timer : MonoBehaviour
     [SerializeField]
     private GameObject _end;
     private GameManager _gm;
+    public int _currentSelected;
+    public float _totalspeedboosted;
+    public float _totaljumpboosted;
+    public int _totaltimeboosted;
 
     private void Start()
     {

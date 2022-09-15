@@ -13,7 +13,7 @@ public class CharSelection : MonoBehaviour
     [SerializeField] GameObject _lockText;
     [SerializeField] GameObject _startButton;
 
-    private void Start()
+    private void Awake()
     {
         index = PlayerPrefs.GetInt("CharSelected", 0);
         PlayerPrefs.SetInt("Ac0", 1);
