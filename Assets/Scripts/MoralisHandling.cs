@@ -54,8 +54,7 @@ public class MoralisHandling : MonoBehaviour
     [SerializeField] private Transform content;
     [SerializeField] private InventoryItem itemPrefab;
     [SerializeField] private GameObject abilityBoard;
-    [SerializeField] private Transform[] _iconPos;
-    private string _mintNftAddress = "0x44D63054803EF638a842Ffe3D75A5036048b5dc0";
+    private string _mintNftAddress = "0x8208Bb3a2e25310BAd343fD80968F061F23a707B";
 
     private void Awake()
     {

@@ -39,16 +39,17 @@ public class CharMovement : MonoBehaviour
         if (_dis <= 5f)
         {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(target.transform.position - transform.position), rotationSpeed * Time.deltaTime);
-            if (_navAgent.enabled == true)
-            {
-                _navAgent.destination = _movePos.position;
-            }
+            
 
         }
-       
+        if (_navAgent.enabled == true)
+        {
+            _navAgent.destination = _movePos.position;
+        }
+
 
         //move towards the player
-        
+
         if (_dis >= 1.5f && _isMoving == true)
         {
 

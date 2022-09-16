@@ -20,7 +20,7 @@ public class coin : MonoBehaviour
             audioSource.Play();
             gameObject.transform.GetChild(4).GetComponent<ParticleSystem>().Play();
             _am.AddAchievementProgress(3, 1);
-            Destroy(gameObject, 1.5f);
+            Destroy(gameObject, 1f);
         }
     }
 }
