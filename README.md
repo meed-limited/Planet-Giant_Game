@@ -48,6 +48,7 @@ But be careful... at every turn the Giants are chasing after you.
 Don't get caught! 
 
 Booster Items
+
 To help you, you can activate booster items before the game starts. 
 These are in the form of NFTs, and you simply scan your wallet at the beginning of the game to activate the boosters.
 
