@@ -126,6 +126,13 @@ public class GameManager : MonoBehaviour
     {
         _playerAni.SetTrigger("Dead");
         GetComponent<AudioSource>().Play();
+        StartCoroutine(GameStop());
         Cursor.lockState = CursorLockMode.None;
+    }
+
+    IEnumerator GameStop()
+    {
+        yield return new WaitForSeconds(1.5f);
+        Time.timeScale = 0;
     }
 }

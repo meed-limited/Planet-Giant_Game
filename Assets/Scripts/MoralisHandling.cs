@@ -64,6 +64,7 @@ public class MoralisHandling : MonoBehaviour
     private void Start()
     {
         int index = PlayerPrefs.GetInt("CharSelected", 0);
+        Time.timeScale = 1;
         textMesh = GameObject.Find("Address" + PlayerPrefs.GetInt("Selected").ToString()).GetComponent<TextMeshPro>();
         _startAssetInputs = GameObject.Find("Model" + index).GetComponent<StarterAssetsInputs>();
         if (SceneManager.GetActiveScene().buildIndex == 3)
