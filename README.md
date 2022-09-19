@@ -25,7 +25,8 @@ The entire project is divided in 3 parts. Here are the links to all the differen
 
 **!! This is the Unity project source code !!**
 If you want to download and enjoy the game, Please click the link below:
-Plant-Giant Download: ___
+
+Plant-Giant Download: https://drive.google.com/file/d/1p3Ba9BJJSUaR4rrLk4Of7xcVFPJH89-W/view?usp=sharing
 
 
 ## Description
@@ -96,7 +97,8 @@ If you are new to this game, remember to keep your metamask open while you playi
 
 Installation description
 If you are interest in enjoy the game, please download the game file below:
-Plant-Giant Download:
+
+Plant-Giant Download: https://drive.google.com/file/d/1p3Ba9BJJSUaR4rrLk4Of7xcVFPJH89-W/view?usp=sharing
 
 If you want to go through the project in Unity and see how it was made, please download this git file and open it with Unity 2021.3.5f1
 
