@@ -31,7 +31,9 @@ Plant-Giant Download: ___
 ## Description
 
 The Story
+
 S A V E   E L D O R A
+
 This was the last distress signal from Planet Choria in year 2852, before the collapse of their governing AI, leading to the auto-release of the Giants.
 Eldora, a mystical fairy race native to Planet Choria hold a power unlike any other. It is said that whoever harvests their power can rule the universe.
 While all the planets start building their fleets, you take one step ahead.
