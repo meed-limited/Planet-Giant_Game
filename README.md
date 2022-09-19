@@ -23,14 +23,14 @@ The entire project is divided in 3 parts. Here are the links to all the differen
 - React Webapp: https://github.com/shamrockstudios/Planet-Giant_Game
 - Backend contracts: https://github.com/shamrockstudios/Planet-Giant_Contracts
 
-!! This is the Unity project source code !!
+**!! This is the Unity project source code !!**
 If you want to download and enjoy the game, Please click the link below:
 Plant-Giant Download: ___
 
 
 ## Description
 
-The Story
+**The Story**
 
 S A V E   E L D O R A
 
@@ -41,13 +41,13 @@ Because there is no one else who wants to rule the universe more than you.
 
 This is a game where you play the villain.
 
-Gameplay
+**Gameplay**
 
 Find all the fairies and collect as many Giant Coins as you can! There is only so much time for you to get to the exit.
 But be careful... at every turn the Giants are chasing after you.
 Don't get caught! 
 
-Booster Items
+**Booster Items**
 
 To help you, you can activate booster items before the game starts. 
 These are in the form of NFTs, and you simply scan your wallet at the beginning of the game to activate the boosters.
@@ -58,16 +58,16 @@ Try it yourself: [https://main.d2c47nkbs6wp2h.amplifyapp.com/](https://main.d2c4
 
 ## How to play
 
-!! Important !!
+**!! Important !!**
 
-- Please make sure you have a metamask wallet in your phone before starting the game.
+**- Please make sure you have a metamask wallet in your phone before starting the game.**
 
-- Please add Cronos testnet to you wallet: https://chainlist.org/chain/338
+**- Please add Cronos testnet to you wallet: https://chainlist.org/chain/338**
 
-- Please get some TCRO (is free!) and switch your wallet to Cronos testnet before you claim the rewards!
-- TCRO: https://cronos.org/faucet
+**- Please get some TCRO (is free!) and switch your wallet to Cronos testnet before you claim the rewards!**
+**- TCRO: https://cronos.org/faucet**
 
-!! Important !!
+**!! Important !!**
 
 - After you started the game and chose you charactor, click connect and scan the displayed QR code with your metamask's built-in qr code scanner.
 
@@ -83,7 +83,7 @@ Try it yourself: [https://main.d2c47nkbs6wp2h.amplifyapp.com/](https://main.d2c4
 
 If you are new to this game, remember to keep your metamask open while you playing the game. After finishing the lv1, lv2 and lv3 of the game, we will mint you some ability NFTs.
 
-!! Open your metamask wallet to receive it !!
+**!! Open your metamask wallet to receive it !!**
 
 ## Built With
 
