@@ -18,6 +18,7 @@ public class CharMovement : MonoBehaviour
     [SerializeField] private AchievementManager _am;
     [SerializeField] private AudioClip[] _sfxs;
     private AudioSource _audioSource;
+    bool isTouched = false;
 
 
     void Start()
@@ -66,7 +67,7 @@ public class CharMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && isTouched == false)
         {
             if (_isMoving == false)
             {
@@ -81,6 +82,7 @@ public class CharMovement : MonoBehaviour
             _navAgent.enabled = true;
             ParticleSystem _vfx = gameObject.GetComponentInChildren<ParticleSystem>();
             _vfx.Play();
+            isTouched = true;
         }
 
         if (other.gameObject.CompareTag("building"))

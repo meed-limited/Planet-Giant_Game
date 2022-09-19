@@ -26,7 +26,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 6933
+  controlID: 2871
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 6853
+  controlID: 2802
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -398,9 +398,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1193.5546, y: 613.0657, z: 21.547457}
+    m_Target: {x: 40.75653, y: 8.621049, z: 38.7}
     speed: 2
-    m_Value: {x: 1193.5546, y: 613.0657, z: 21.547457}
+    m_Value: {x: 40.75653, y: 8.621049, z: 38.7}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -451,9 +451,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.0043419795, y: 0.9925558, z: 0.036430452, w: 0.11729831}
   m_Size:
-    m_Target: 58.5685
+    m_Target: 1.5479629
     speed: 2
-    m_Value: 58.5685
+    m_Value: 1.5479629
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -817,11 +817,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 33374b5a94f1ec14983cbb5fc811d37a,
+  m_AnimatorController: {fileID: 9100000, guid: 66e1f5e0708f79044a8f629052dd1449,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -628688056247094787, guid: 33374b5a94f1ec14983cbb5fc811d37a,
-      type: 2}
+  - m_Target: {fileID: 110700000, guid: 66e1f5e0708f79044a8f629052dd1449, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -953,7 +952,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 3693f0ff5293f0ff6e93f0ff8a93f0ffa693f0ffc293f0ffc4a4f1ffea21f3ff4e6ef3ffb2fbf3ffb6fbf3ff32fcf3ff36fcf3ff3afcf3ff3efcf3ff42fcf3ff48fcf3ffc6fcf3ffcafcf3ff2efdf3ff32fdf3ff36fdf3ff62fdf3ff66fdf3ff7afdf3ff80fdf3ff7211f4ff6224f4ff1eb5f4ffe2e4f5ffe4e5f5ffa4f9f5ffee0af6fff00bf6ff72bcfaff30bdfaff1848fbff46d1fbff9ee1fbfface2fbff6415fdff221cfeff4833feff8669ffff14fbfffff4fffffff0030200080802004ec90500baca050088310600e2310600a23306009634060048390600dc390600
+      m_ExpandedIDs: 14fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1045,22 +1044,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/GUI_Parts/Gui_parts
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/GUI_Parts/Gui_parts
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\shamr\OneDrive\Desktop\Project\poke-a-mango\PokeAMango_Demo\hackathon
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 88600600
-    m_LastClickedID: 417928
-    m_ExpandedIDs: 0000000064b2010066b2010068b201006ab201006cb201006eb2010070b2010072b2010074b2010076b2010078b201007ab201007cb201007eb2010080b2010082b2010084b20100fab2010000ca9a3b
+    m_SelectedIDs: c47c0000
+    m_LastClickedID: 31940
+    m_ExpandedIDs: 00000000c47c0000c67c0000c87c0000ca7c0000cc7c0000ce7c0000d07c0000d27c0000d47c0000d67c0000d87c0000da7c0000dc7c0000de7c0000e07c0000e27c0000e47c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1088,7 +1087,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000064b2010066b2010068b201006ab201006cb201006eb2010070b2010072b2010074b2010076b2010078b201007ab201007cb201007eb2010080b2010082b2010084b2010000ca9a3b
+    m_ExpandedIDs: 00000000c47c0000c67c0000c87c0000ca7c0000cc7c0000ce7c0000d07c0000d27c0000d47c0000d67c0000d87c0000da7c0000dc7c0000de7c0000e07c0000e27c0000e47c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1140,7 +1139,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 649.6666}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 206
@@ -1168,7 +1167,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 6863
+  controlID: 2766
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52

@@ -5,6 +5,7 @@ using UnityEngine;
 public class coin : MonoBehaviour
 {
     [SerializeField] private AchievementManager _am;
+    private bool isTouched = false;
     AudioSource audioSource;
     private void Start()
     {
@@ -13,13 +14,14 @@ public class coin : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player")&& isTouched == false)
         {
             Debug.Log("Coin Get!");
             GetComponent<Animator>().SetBool("Collected", true);
             audioSource.Play();
             gameObject.transform.GetChild(4).GetComponent<ParticleSystem>().Play();
             _am.AddAchievementProgress(3, 1);
+            isTouched = true;
             Destroy(gameObject, 1f);
         }
     }

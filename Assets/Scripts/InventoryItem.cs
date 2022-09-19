@@ -116,7 +116,7 @@ public class InventoryItem : MonoBehaviour
 
         string imageurl = myMetadataObject.image.Replace("ipfs://", "");
         Debug.Log(imageurl);
-        StartCoroutine(GetTexture("https://cloudflare-ipfs.com/ipfs/" + imageurl));
+        StartCoroutine(GetTexture("https://ipfs.io/ipfs/" + imageurl));
     }
 
     public void Selected()
