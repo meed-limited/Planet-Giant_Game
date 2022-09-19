@@ -15,22 +15,75 @@
 </div>
 
 ## Note
-
 This game is the main part of the Planet-Giant project - built for the Cronos & Moralis Hackathon - August-September 2022.
 
 The entire project is divided in 3 parts. Here are the links to all the different github repos:
 
 - Unity Game: https://github.com/shamrockstudios/Planet-Giant_Game
-- React Webapp: https://github.com/shamrockstudios/Planet-Giant_Game
+- React Webapp:  https://github.com/shamrockstudios/Planet-Giant_Webapp
 - Backend contracts: https://github.com/shamrockstudios/Planet-Giant_Contracts
+
+**!! This is the Unity project source code !!**
+If you want to download and enjoy the game, Please click the link below:
+Plant-Giant Download: ___
+
 
 ## Description
 
-Unity game description - To be filled !
+**The Story**
+
+S A V E   E L D O R A
+
+This was the last distress signal from Planet Choria in year 2852, before the collapse of their governing AI, leading to the auto-release of the Giants.
+Eldora, a mystical fairy race native to Planet Choria hold a power unlike any other. It is said that whoever harvests their power can rule the universe.
+While all the planets start building their fleets, you take one step ahead.
+Because there is no one else who wants to rule the universe more than you.
+
+This is a game where you play the villain.
+
+**Gameplay**
+
+Find all the fairies and collect as many Giant Coins as you can! There is only so much time for you to get to the exit.
+But be careful... at every turn the Giants are chasing after you.
+Don't get caught! 
+
+**Booster Items**
+
+To help you, you can activate booster items before the game starts. 
+These are in the form of NFTs, and you simply scan your wallet at the beginning of the game to activate the boosters.
 
 Try it yourself: [https://main.d2c47nkbs6wp2h.amplifyapp.com/](https://main.d2c47nkbs6wp2h.amplifyapp.com/)
 
 ![Preview](./Preview.png)
+
+## How to play
+
+**!! Important !!**
+
+**- Please make sure you have a metamask wallet in your phone before starting the game.**
+
+**- Please add Cronos testnet to you wallet: https://chainlist.org/chain/338**
+
+**- Please get some TCRO (is free!) and switch your wallet to Cronos testnet before you claim the rewards!**
+**- TCRO: https://cronos.org/faucet**
+
+**!! Important !!**
+
+- After you started the game and chose you charactor, click connect and scan the displayed QR code with your metamask's built-in qr code scanner.
+
+- Control you movement by pressing WASD, Space bar for jump, Shift for running, Tab for achievement menu and Ese for pausing the game.
+
+- When you are standing in the block and giant also near the the block, the giant will start to stepping in the block, which will do damage to you! Run before you got catch!
+
+- Try the collect the giant-coin to unlock a unique charactor.
+
+- After you resued all faires, find you way to the exit asap! It is a shining trophy!
+
+## NFT Rewards
+
+If you are new to this game, remember to keep your metamask open while you playing the game. After finishing the lv1, lv2 and lv3 of the game, we will mint you some ability NFTs.
+
+**!! Open your metamask wallet to receive it !!**
 
 ## Built With
 
@@ -41,7 +94,11 @@ Try it yourself: [https://main.d2c47nkbs6wp2h.amplifyapp.com/](https://main.d2c4
 
 ## Installation
 
-Installation description - To be filled !
+Installation description
+If you are interest in enjoy the game, please download the game file below:
+Plant-Giant Download:
+
+If you want to go through the project in Unity and see how it was made, please download this git file and open it with Unity 2021.3.5f1
 
 ## Features:
 
